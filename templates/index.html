@@ -1,0 +1,203 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>PHSS</title>
+    <link rel="icon" href="{% static 'img/icon.png' %}">
+
+</head>
+
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav_logo">
+                <i class="fa-solid fa-book-open"></i>PHSS
+            </a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_items">
+                        <a href="/" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/facility" class="nav_link">Facility</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/admission" class="nav_link">Admission</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/payment" class="nav_link">Payment</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/dashboard" class="nav_link">Dashboard</a>
+                    </li>
+                </ul>
+                <div class="nav_close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    </head>
+
+    <body>
+
+        <div class="slideshow section">
+
+            <div class="mySlides fade">
+
+                <img src="{% static 'img/teacher_with_laptop.jpg' %}" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="{% static 'img/teacher_with_laptop.jpg' %}" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="{% static 'img/teacher_with_laptop.jpg' %}" style="width:100%">
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+
+
+
+
+        <section class="mob-home">
+            <div class="mob-cont">
+                <img src="{% static 'img/school.png' %}" alt="">
+                <h3 class="mob-tit">Read More</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eaque, non iste maiores iusto eveniet quis consequatur quibusdam totam facere odio explicabo reiciendis unde molestiae id! Atque voluptatibus quia esse?</p>
+            </div>
+        </section>
+
+        <section class="feature-container">
+            <div class="feature_icon">
+                <h3>1000+</h3>
+                <p>Students</p>
+            </div>
+            <div class="feature_icon">
+                <h3>30+</h3>
+                <p>Teachers</p>
+            </div>
+            <div class="feature_icon">
+                <h3>2</h3>
+                <p>Libraries</p>
+            </div>
+            <div class="feature_icon">
+                <h3>4</h3>
+                <p>Buses</p>
+            </div>
+        </section>
+
+        <section class="service" id="service">
+            <div class="service_container">
+                <h1 class="doctor_heading">Benefits About <span> PHSS</span></h1>
+                <div class="service_row">
+                    <div class="service_data">
+                        <h3> <i class="fa-solid fa-book-atlas"></i> Online Course</h3>
+                        <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p><br><br><br>
+                        <h3> <i class="fa-solid fa-user-astronaut"></i> Learn with Expert</h3>
+                        <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p><br><br><br>
+                        <h3> <i class="fa-solid fa-award"></i> Earn A Certificate </h3>
+                        <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p><br><br><br>
+                    </div>
+                    <div class="service_img">
+                        <img src="{% static 'img/nurse.png' %}">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer class="footer section">
+
+            <div class="footer_container container grid">
+                <div class="footer_content">
+                    <a href="#" class="footer_logo">
+                        <i class="fa-solid fa-book-open"></i> Read More
+                    </a>
+                    <p class="footer_description">
+                        Lets Make Our Nation 100% <br> Literate Nation Together<br>
+
+                    </p>
+                </div>
+
+                <div class="footer_content">
+                    <h3 class="footer_title">
+                        Company
+                    </h3>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="" class="footer_link">About</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">History</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_content">
+                    <h3 class="footer_title">
+                        Information
+                    </h3>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="" class="footer_link">Know about us</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_content">
+                    <h3 class="footer_title">
+                        Follow Us
+                    </h3>
+
+                    <ul class="footer_social">
+                        <a href="" target="_blank" class="footer_social-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer_social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer_social-link">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer_copy">
+                    &#169; Shrabya. All rights reserved
+                </div>
+        </footer>
+
+    </body>
+    <script src="{% static 'script.js' %}"></script>
+
+
+</html>

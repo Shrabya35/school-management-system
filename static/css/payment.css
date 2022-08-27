@@ -1,0 +1,100 @@
+.pay {
+    width: 100vw;
+    min-height: 100vh;
+    background: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    background: white;
+    max-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(255, 162, 1, 255);
+}
+
+.left {
+    flex-basis: 50%;
+}
+
+.right {
+    flex-basis: 50%;
+}
+
+form {
+    padding: 1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 1.875rem;
+    border-radius: 5px;
+    background: #ffa300;
+}
+
+form input[type="text"] {
+    width: 90%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+
+#zip {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+#zip select {
+    padding: 0.5rem 0.7rem;
+}
+
+#zip input[type="number"] {
+    width: 95%;
+    padding: 0.5rem 0.7rem;
+    margin-left: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    background: #ffa300;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #de9612;
+}
+
+@media only screen and (max-width: 770px) {
+    .cont {
+        flex-direction: column;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .pay {
+        padding-top: 2rem;
+    }
+}

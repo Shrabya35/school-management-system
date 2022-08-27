@@ -1,0 +1,117 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/payment.css' %}">
+    <title>Read More</title>
+    <link rel="icon" href="{% static 'img/icon.png' %}">
+
+</head>
+
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav_logo">
+                <i class="fa-solid fa-book-open"></i> Read More
+            </a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_items">
+                        <a href="/" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/facility" class="nav_link">Facility</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/admission" class="nav_link">Admission</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/payment" class="nav_link">Payment</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/dashboard" class="nav_link">Dashboard</a>
+                    </li>
+                </ul>
+                <div class="nav_close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="pay">
+        <div class="cont">
+            <div class="left">
+                <h3>STUDENT INFO</h3>
+                <form>
+                    Full name
+                    <input type="text" name="" placeholder="Enter your name" required> Parent's Name
+                    <input type="text" name="" placeholder="Enter your parent's name" required> Address
+                    <input type="text" name="" placeholder="address" required> Phone Number
+                    <input type="text" name="" placeholder="Enter phone number" required>
+                    <div id="zip">
+                        <label>
+						Class
+						<select>
+							<option>11 Technical</option>
+							<option>11 Management</option>
+							<option>11 Bio</option>
+							<option>12 Technical</option>
+							<option>12 Management</option>
+                            <option>12 Bio</option>
+						</select>
+					</label>
+                        <label>
+						Roll Number
+						<input type="number" name="" placeholder="Roll Number">
+					</label>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <h3>PAYMENT</h3>
+                <form>
+                    Accepted Card <br>
+                    <img src="{% static 'img/card1.png' %}" width="100">
+                    <img src="{% static 'img/card2.png' %}" width="50">
+                    <br><br> Credit card number
+                    <input type="text" name="" placeholder="Enter card number" required> Exp month
+                    <input type="text" name="" placeholder="Enter Month" required>
+                    <div id="zip">
+                        <label>
+						Exp year
+						<select>
+							<option>Choose Year..</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+						</select>
+					</label>
+                        <label>
+						Rs.
+						<input type="number" name="" placeholder="Rs 0.00" required>
+					</label>
+                    </div>
+                </form>
+                <input type="submit" name="" value="Proceed">
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="{% static 'script.js' %}"></script>
+
+</html>

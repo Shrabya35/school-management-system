@@ -1,0 +1,85 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/facility.css' %}">
+    <link rel="stylesheet" href="#fe6f9b">
+    <title>facility | Read More</title>
+    <link rel="icon" href="{% static 'img/icon.png' %}">
+
+</head>
+
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav_logo">
+                <i class="fa-solid fa-book-open"></i> Read More
+            </a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_items">
+                        <a href="/" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/facility" class="nav_link">Facility</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/admission" class="nav_link">Admission</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/payment" class="nav_link">Payment</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/dashboard" class="nav_link">Dashboard</a>
+                    </li>
+                </ul>
+                <div class="nav_close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="facility" id="facility">
+        <h1 class="facility_heading">Our<span> Facilities </span></h1>
+        <div class="facility-container">
+            <div class="facility-box">
+                <img src="{% static 'img/library.jpg' %}" class="facility_img" alt="">
+                <h3>Library</h3>
+                <span>The school provides a separate library with text books, reference books and audio-visual items.</span>
+            </div>
+            <div class="facility-box">
+                <img src="{% static 'img/lab.jpg' %}" class="facility_img" alt="">
+                <h3>Lab</h3>
+                <span>The school provides a separate laboratory with  physical lab, Chemistry Labs and Biology Lab.</span>
+            </div>
+            <div class="facility-box">
+                <img src="{% static 'img/bus.jpg' %}" class="facility_img" alt="">
+                <h3>Transportation</h3>
+                <span>The school provides a separate library with text books, reference books and audio-visual items.</span>
+            </div>
+            <div class="facility-box">
+                <img src="{% static 'img/health.jpg' %}" class="facility_img" alt="">
+                <h3>Health</h3>
+                <span>The school provides a separate library with text books, reference books and audio-visual items</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+<script src="{% static 'script.js' %}"></script>
+
+</html>

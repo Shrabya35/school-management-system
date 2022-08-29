@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/payment.css' %}">
-    <title>Read More</title>
+    <title>Payment | PHSS</title>
     <link rel="icon" href="{% static 'img/icon.png' %}">
 
 </head>
@@ -52,13 +52,14 @@
     <div class="pay">
         <div class="cont">
             <div class="left">
-                <h3>STUDENT INFO</h3>
-                <form>
+                <h3>Student Info</h3>
+                <form method="post" action="/payment">
+                    {% csrf_token %}
                     Full name
-                    <input type="text" name="" placeholder="Enter your name" required> Parent's Name
-                    <input type="text" name="" placeholder="Enter your parent's name" required> Address
-                    <input type="text" name="" placeholder="address" required> Phone Number
-                    <input type="text" name="" placeholder="Enter phone number" required>
+                    <input type="text" name="y2name" placeholder="Enter your name" required> Parent's Name
+                    <input type="text" name="p2name" placeholder="Enter your parent's name" required> Address
+                    <input type="text" name="address2" placeholder="address" required> Phone Number
+                    <input type="text" name="phone2" placeholder="Enter phone number" required>
                     <div id="zip">
                         <label>
 						Class
@@ -73,25 +74,24 @@
 					</label>
                         <label>
 						Roll Number
-						<input type="number" name="" placeholder="Roll Number">
+						<input type="number" name="rolln" placeholder="Roll Number" required>
 					</label>
                     </div>
                 </form>
             </div>
             <div class="right">
-                <h3>PAYMENT</h3>
+                <h3>Payment</h3>
                 <form>
                     Accepted Card <br>
                     <img src="{% static 'img/card1.png' %}" width="100">
                     <img src="{% static 'img/card2.png' %}" width="50">
                     <br><br> Credit card number
-                    <input type="text" name="" placeholder="Enter card number" required> Exp month
-                    <input type="text" name="" placeholder="Enter Month" required>
+                    <input type="text" name="cardn" placeholder="Enter card number" required> Exp month
+                    <input type="text" name="expm" placeholder="Enter Month" required>
                     <div id="zip">
                         <label>
 						Exp year
 						<select>
-							<option>Choose Year..</option>
 							<option>2022</option>
 							<option>2023</option>
 							<option>2024</option>
@@ -99,12 +99,12 @@
 						</select>
 					</label>
                         <label>
-						Rs.
-						<input type="number" name="" placeholder="Rs 0.00" required>
+						Amount
+						<input type="number" name="pay" placeholder="Rs 0.00" required>
 					</label>
                     </div>
+                    <input type="submit"  value="Proceed">
                 </form>
-                <input type="submit" name="" value="Proceed">
             </div>
         </div>
     </div>

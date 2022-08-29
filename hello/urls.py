@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-admin.site.site_header = "Readmore Admin"
-admin.site.site_title = "Readmore Admin Portal"
-admin.site.index_title = "Welcome to Readmore database "
+admin.site.site_header = "PHSS "
+admin.site.site_title = "PHSS Admin Pannel"
+admin.site.index_title = "Welcome to PHSS database "
 
 urlpatterns = [
     path('admin/', admin.site.urls),

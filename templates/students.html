@@ -7,9 +7,8 @@
     <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/facility.css' %}">
-    <link rel="stylesheet" href="#fe6f9b">
-    <title>Facility | PHSS</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <title>Dashboard | PHSS</title>
     <link rel="icon" href="{% static 'img/icon.png' %}">
 
 </head>
@@ -49,32 +48,31 @@
         </nav>
     </header>
 
-
-    <section class="facility" id="facility">
-        <h1 class="facility_heading">Our<span> Facilities </span></h1>
-        <div class="facility-container">
-            <div class="facility-box">
-                <img src="{% static 'img/library.jpg' %}" class="facility_img" alt="">
-                <h3>Library</h3>
-                <span>The school provides a separate library with text books, reference books and audio-visual items.</span>
-            </div>
-            <div class="facility-box">
-                <img src="{% static 'img/lab.jpg' %}" class="facility_img" alt="">
-                <h3>Lab</h3>
-                <span>The school provides a separate laboratory with  physical lab, Chemistry Labs and Biology Lab.</span>
-            </div>
-            <div class="facility-box">
-                <img src="{% static 'img/bus.jpg' %}" class="facility_img" alt="">
-                <h3>Transportation</h3>
-                <span>The school provides a separate library with text books, reference books and audio-visual items.</span>
-            </div>
-            <div class="facility-box">
-                <img src="{% static 'img/health.jpg' %}" class="facility_img" alt="">
-                <h3>Health</h3>
-                <span>The school provides a separate library with text books, reference books and audio-visual items</span>
-            </div>
-        </div>
+    <section class="table section">
+        <table style="width:60%">
+            <tr id="table-head">
+                <th>Sn</th>
+                <th>Name</th>
+                <th>Parent's Name</th>
+                <th>address</th>
+                <th>Phone number</th>
+            </tr>
+            {% for admission1 in data %}
+            <tr class="tr1">
+                <td>{{forloop.counter}}.</td>
+                <td>{{admission1.yname}}</td>
+                <td>{{admission1.pname}}</td>
+                <td>{{admission1.address}}</td>
+                <td>{{admission1.phone}}</td>
+            </tr>
+            {% endfor %}
+        </table>
     </section>
+    
+
+  
+
+
 
 
 

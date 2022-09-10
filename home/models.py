@@ -14,8 +14,8 @@ class admission1(models.Model):
 class payment1(models.Model):
     y2name = models.CharField(max_length=122)
     p2name = models.CharField(max_length=122)
-    address2 = models.CharField(max_length=122)
-    phone3 = models.CharField(max_length=122)
+    email2 = models.CharField(max_length=122)
+    phone3 = models.CharField(max_length=122, blank=True, null=True)
     cardn = models.CharField(max_length=122)
     expm = models.CharField(max_length=122)
     pay = models.FloatField(max_length=122)

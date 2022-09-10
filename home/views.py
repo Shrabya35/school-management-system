@@ -30,12 +30,12 @@ def payment(request):
      if request.method == "POST":
           y2name = request.POST.get('y2name')
           p2name = request.POST.get('p2name')
-          address2 = request.POST.get('address2')
+          email2 = request.POST.get('email2')
           phone3 = request.POST.get('phone3')
           cardn = request.POST.get('cardn')
           expm = request.POST.get('expm')
           pay = request.POST.get('pay')
-          Payment2 = payment1(y2name=y2name, p2name=p2name, address2=address2, phone3=phone3, cardn=cardn, expm=expm, pay=pay)
+          Payment2 = payment1(y2name=y2name, p2name=p2name, email2=email2, phone3=phone3, cardn=cardn, expm=expm, pay=pay)
           Payment2.save()
 
 

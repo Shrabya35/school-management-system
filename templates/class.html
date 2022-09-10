@@ -48,25 +48,31 @@
         </nav>
     </header>
 
-    <section class="main section">
-        <div class="section-but">
-            <div class="one">
-                <a href="/class">
-                    <button>Classes</button>
-                </a>
-            </div>
-            <div class="two">
-                <a href="/students">
-                    <button>Students</button>
-                </a>
-            </div>
-            <div class="three">
-                <a href="">
-                    <button>Payment</button>
-                </a>
-            </div>
-        </div>
+    <section class="table section">
+        <table style="width:60%">
+            <tr id="table-head">
+                <th>Sn</th>
+                <th>Class</th>
+                <th>ID</th>
+                <th>Password</th>
+                <th>Time</th>
+                <th>Link</th>
+            </tr>
+            {% for admin1 in class2 %}
+            <tr class="tr1">
+                <td>{{forloop.counter}}.</td>
+                <td>{{admin1.grade}}</td>
+                <td>{{admin1.class_id}}</td>
+                <td>{{admin1.passw}}</td>
+                <td>{{admin1.time}}</td>
+                <td>
+                    <a href="{{admin1.link}}" >Join</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
     </section>
+    
 
   
 

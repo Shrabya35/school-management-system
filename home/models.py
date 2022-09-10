@@ -15,11 +15,18 @@ class payment1(models.Model):
     y2name = models.CharField(max_length=122)
     p2name = models.CharField(max_length=122)
     address2 = models.CharField(max_length=122)
-    phone2 = models.CharField(max_length=122)
-    rolln = models.CharField(max_length=122)
+    phone3 = models.CharField(max_length=122)
     cardn = models.CharField(max_length=122)
     expm = models.CharField(max_length=122)
     pay = models.FloatField(max_length=122)
+
+class admin1(models.Model):
+    class_id = models.CharField(max_length=122)
+    passw = models.CharField(max_length=122)
+    time = models.CharField(max_length=122)
+    grade = models.CharField(max_length=122)
+    link = models.CharField(max_length=122)
+
 
 
     
